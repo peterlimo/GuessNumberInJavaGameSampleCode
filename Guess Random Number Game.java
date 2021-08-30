@@ -35,7 +35,7 @@ boolean play = true;
         
         switch(entered){
             case 1:
-                System.out.println("You are playing easy");
+                System.out.println("Easy");
                 m=r_no/2;
                 break;
             case 2:
@@ -75,6 +75,16 @@ break;
                     + " You guessed the number.");
                 break;
             }
+                      else if (r_no> guess) {
+                System.out.println(
+                    "The number is greater your number");
+                break;
+            }
+                 else if (r_no< guess) {
+                System.out.println(
+                    "The number is less your guess");
+                break;
+            }
             else if (r_no!= guess) {
                 System.out.println("The number is not equal, Please retry");
             }
@@ -108,4 +118,11 @@ else{
 }
             }
         }
+        public static int getRandomInteger(int maximum, int minimum){ return ((int) (Math.random()*(maximum - minimum))) + minimum; }
+
+String dificulty;
+switch(difficulty)
+{
+    case easy
+}
 }

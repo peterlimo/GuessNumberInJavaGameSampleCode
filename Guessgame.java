@@ -47,13 +47,11 @@ public static void main(String[] args)
         System.out.println ("It took you " + counter + " guess(es) to get it correct"); 
         System.out.print ("Do you want to play again? (y/n): ");
         input1 = input.nextLine();  // absorb enter key from integer
-        input1 = input.nextLine();
-
         if (input1.equals("y"))
            play = true;
         else
            play = false;
-
+System.out.println ("It took you " + counter + " guess(es) to get it correct"); 
             }
         }
     }
